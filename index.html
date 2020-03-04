@@ -1,483 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
-		<title>Resume</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume</title>
+        <link rel="stylesheet" href="./static/css/index.css">
 	</head>
 	<body>
-		<style>
-			html,
-			body,
-			div,
-			p {
-				margin: 0;
-				padding: 0
-			}
-
-			body {
-				font-size: 14px;
-				font-family: "microsoft yahei";
-				background-color: #ffffff
-			}
-
-			table {
-				border-collapse: collapse;
-				border-spacing: 0;
-				table-layout: fixed
-			}
-
-			th,
-			td {
-				font-size: 14px;
-				padding: 0
-			}
-
-			a {
-				text-decoration: none
-			}
-
-			img {
-				border: 0 none
-			}
-
-			.blue {
-				text-decoration: none;
-				color: #3c3d5d
-			}
-
-			.chead {
-				width: 1002px
-			}
-
-			.chead .logo {
-				width: 698px;
-				height: 90px
-			}
-
-			.chead .txt {
-				width: 152px;
-				height: 90px
-			}
-
-			.column {
-				width: 1002px;
-				line-height: 28px;
-				border: 1px solid #dedede
-			}
-
-			.column .hbox {
-				width: 185px;
-				height: 154px
-			}
-
-			.column .head {
-				display: block;
-				background-color: #fafafa
-			}
-
-			.column .box {
-				width: 100%;
-				background-color: #ffffff;
-				border-top: 2px solid #f2f3f5
-			}
-
-			.column .box1 {
-				width: 100%;
-				word-wrap: break-word;
-				color: #ffffff;
-				background-color: #3f4160
-			}
-
-			.column .box2 {
-				width: 100%;
-				background-color: #f8f9fa
-			}
-
-			.column .tba {
-				width: 940px;
-				padding: 0 30px 15px
-			}
-
-			.column .tbb {
-				width: 940px;
-				padding: 0 30px
-			}
-
-			.column .tb1 {
-				width: 900px;
-				line-height: 28px;
-				color: #333333;
-				word-break: break-all;
-				padding: 0 20px
-			}
-
-			.column .tb2 {
-				width: 430px;
-				padding: 0 20px
-			}
-
-			.column .tb3 {
-				width: 900px;
-				padding: 15px 20px 15px 0
-			}
-
-			.column .gray,
-			.column .gray2 {
-				color: #999999;
-				word-break: break-all
-			}
-
-			.column .gray2 {
-				color: #666666
-			}
-
-			.column .plate1,
-			.column .plate2 {
-				width: 430px;
-				height: 54px;
-				font-size: 16px;
-				font-weight: bold;
-				color: #818ba3
-			}
-
-			.column .plate1 {
-				width: 900px;
-				padding: 0 50px
-			}
-
-			.column .plate1 .f16 {
-				font-size: 14px;
-				font-weight: normal;
-				color: #333333
-			}
-
-			.column .plate1 .f12 {
-				font-size: 12px;
-				font-weight: normal;
-				color: #999999
-			}
-
-			.column .keys,
-			.column .keys2 {
-				width: 85px;
-				line-height: 28px;
-				color: #666666
-			}
-
-			.column .keys2 {
-				width: 110px
-			}
-
-			.column .txt1,
-			.column .txt2,
-			.column .txt3 {
-				width: 815px;
-				line-height: 28px;
-				color: #333333;
-				word-break: break-all
-			}
-
-			.column .txt2 {
-				width: 345px
-			}
-
-			.column .txt3 {
-				width: auto;
-				max-width: 815px;
-				font-size: 14px;
-				font-weight: bold
-			}
-
-			.column .txt4 {
-				width: 305px;
-				color: #ffffff;
-				word-break: break-all
-			}
-
-			.column .infr {
-				width: 767px;
-				color: #ffffff;
-				table-layout: auto
-			}
-
-			.column .vam,
-			.column .grcha {
-				vertical-align: middle;
-				margin-left: 5px
-			}
-
-			.column .box1 .vam {
-				margin-right: 5px;
-				margin-left: 0
-			}
-
-			.column .name {
-				font-size: 24px;
-				padding-bottom: 18px
-			}
-
-			.column .icard {
-				color: #a1a3ae;
-				padding-bottom: 18px
-			}
-
-			.column .con {
-				border-top: 1px dotted #ddd
-			}
-
-			.column .pr20 {
-				width: 225px;
-				padding-right: 20px
-			}
-
-			.column .time {
-				width: 120px;
-				line-height: 28px;
-				color: #666666;
-				padding-left: 20px
-			}
-
-			.column .rtbox {
-				width: 765px;
-				line-height: 28px;
-				color: #333333;
-				padding: 0 20px 0 15px;
-				word-break: break-all
-			}
-
-			.column .hai,
-			.column .guan {
-				line-height: 18px;
-				font-size: 12px;
-				color: #ffffff;
-				vertical-align: text-top;
-				margin-left: 5px;
-				padding: 1px 3px;
-				background-color: #3cbe7f;
-				border-radius: 2px
-			}
-
-			.column .guan {
-				background-color: #ff9f20
-			}
-
-			.column .tag {
-				display: inline-block;
-				word-break: break-all;
-				#display: inline;
-				#zoom: 1
-			}
-
-			.column .all {
-				color: #666;
-				padding: 10px 20px;
-				background-color: #fafafa
-			}
-
-			.column .tit {
-				width: 900px;
-				height: 40px;
-				color: #666666;
-				padding: 0 20px;
-				background-color: #f5f5f5
-			}
-
-			.column .p15 {
-				padding: 15px 0
-			}
-
-			.column .p5 {
-				display: inline-block;
-				color: #666666;
-				padding: 0 5px;
-				#display: inline;
-				#zoom: 1
-			}
-
-			.column .cell .skill {
-				width: 165px;
-				text-align: right;
-				padding-right: 15px
-			}
-
-			.column .cell .skbg,
-			.column .cell .skco {
-				display: inline-block;
-				width: 245px;
-				height: 18px;
-				line-height: 18px;
-				font-size: 12px;
-				color: #ffffff;
-				vertical-align: top;
-				margin-top: 6px;
-				background-color: #dddddd;
-				border-radius: 20px;
-				#display: inline;
-				#zoom: 1
-			}
-
-			.column .cell .skco {
-				width: 235px;
-				font-style: normal;
-				margin-top: 0;
-				padding-left: 10px;
-				background-color: #ff9f20;
-				z-index: 3
-			}
-
-			.column .sl .skco {
-				width: 173px
-			}
-
-			.column .lh .skco {
-				width: 112px
-			}
-
-			.column .yb .skco {
-				width: 51px
-			}
-
-			.column .fbox strong {
-				font-size: 14px;
-				font-weight: bold
-			}
-
-			.column .cha {
-				font-size: 12px;
-				font-weight: normal;
-				color: #00457d;
-				margin-left: 5px
-			}
-
-			.column .cha:hover {
-				color: #ff6000
-			}
-
-			.column .email {
-				width: 330px
-			}
-
-			.eng td,
-			.eng .txt3,
-			.eng .fbox strong {
-				font-size: 13px;
-				font-family: 'Arial'
-			}
-
-			.eng .txt1,
-			.eng .rtbox,
-			.eng .phd {
-				width: 775px;
-				font-size: 13px;
-				font-family: 'Arial';
-				line-height: 28px
-			}
-
-			.eng .txt2 {
-				width: 305px
-			}
-
-			.eng .txt4 {
-				width: 245px
-			}
-
-			.eng .cell .txt3 {
-				width: 120px
-			}
-
-			.eng .time,
-			.eng .keys {
-				width: 110px;
-				font-size: 13px;
-				text-align: right
-			}
-
-			.eng .cell .skill {
-				width: 130px
-			}
-
-			.eng .phd {
-				padding-left: 145px
-			}
-
-			.eng .keys {
-				padding-right: 15px
-			}
-
-			.eng .pr20 {
-				width: 205px
-			}
-
-			.eng .pr20 .keys {
-				width: 100px
-			}
-
-			.eng .email {
-				width: 270px
-			}
-
-			.bg-with-blue {
-				background: #f1f1f1;
-				padding: 2px 3px;
-				color: #15b3ff;
-				border-radius: 4px;
-				font-weight: 500;
-			}
-
-			.bg-with-f90 {
-				background: #f1f1f1;
-				padding: 2px 3px;
-				color: #f90;
-				border-radius: 4px;
-				font-weight: 500;
-			}
-
-			.bg-with-3f4160 {
-				background: #f1f1f1;
-				padding: 2px 3px;
-				color: #8a4bd1;
-				border-radius: 4px;
-				font-weight: 500;
-			}
-
-			a {
-				text-decoration: none;
-				color: #fff;
-				padding: 5px;
-				background: #f90;
-				border-radius: 4px;
-				font-size: 12px;
-			}
-
-			.padding td {
-				padding: 3px 0;
-			}
-		</style>
 		<table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
 			<tbody>
 				<tr>
 					<td valign="top">
-						<!--»ù±¾ĞÅÏ¢-->
+						<!--åŸºæœ¬ä¿¡æ¯-->
 						<table cellspacing="0" cellpadding="0" border="0" class="box1">
 							<tbody>
 								<tr>
 									<td class="hbox" align="middle">
-										<img src="https://i.51job.com/resume/ajax/image.php?type=avatar&userid=400829232&1583298580&key=5ba18998ea426cb7a1e6d268d723c5e3"
-										 width="85" height="104" class="head" alt="Í·Ïñ">
+										<img
+											src="https://i.51job.com/resume/ajax/image.php?type=avatar&userid=400829232&1583298580&key=5ba18998ea426cb7a1e6d268d723c5e3"
+											width="85"
+											height="104"
+											class="head"
+											alt="å¤´åƒ"
+										/>
 									</td>
 									<td>
 										<table cellspacing="0" cellpadding="0" border="0" class="infr">
 											<tbody>
 												<tr>
-													<td colspan="2" class="name">ÔÀÓÀºé</td>
-													<td align="right" class="icard"><a href="">ÏÂÔØ¼òÀú</a></td>
+													<td colspan="2" class="name">å²³æ°¸æ´ª</td>
+													<td align="right" class="icard"><a href="https://gitee.com/dh_aiya/dh_aiya/raw/master/static/Resume.pdf">ä¸‹è½½ç®€å†</a></td>
 												</tr>
 												<tr class="padding">
-													<td valign="top">
-														<img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y1.png" width="20" height="20" />Ä¿Ç°ÕıÔÚÕÒ¹¤×÷
-													</td>
-													<td valign="top">
-														<img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y2.png" width="20" height="20" />13778791025
-													</td>
+													<td valign="top"><img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y1.png" width="20" height="20" />ç›®å‰æ­£åœ¨æ‰¾å·¥ä½œ</td>
+													<td valign="top"><img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y2.png" width="20" height="20" />13778791025</td>
 													<td valign="top">
 														<table cellspacing="0" cellpadding="0" border="0" class="email">
 															<tbody>
@@ -494,8 +50,9 @@
 												<tr class="padding">
 													<td valign="top" colspan="3">
 														<p>
-															<img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y4.png" width="20" height="20" />ÄĞ<span
-															 class="p5">|</span>21 Ëê (1999/02/25)<span class="p5">|</span>ÏÖ¾Ó×¡°ÍÖĞ<span class="p5">|</span>ÔİÎŞ¾­Ñé </p>
+															<img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y4.png" width="20" height="20" />ç”·<span class="p5">|</span>21 å²
+															(1999/02/25)<span class="p5">|</span>ç°å±…ä½å·´ä¸­<span class="p5">|</span>æš‚æ— ç»éªŒ
+														</p>
 													</td>
 												</tr>
 											</tbody>
@@ -504,7 +61,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<!--×î½ü¹¤×÷-->
+						<!--æœ€è¿‘å·¥ä½œ-->
 						<table cellspacing="0" cellpadding="0" border="0" class="box2">
 							<tbody>
 								<tr>
@@ -522,19 +79,19 @@
 															</thead>
 															<tbody>
 																<tr>
-																	<td colspan="2" class="plate2">×î½ü¹¤×÷</td>
+																	<td colspan="2" class="plate2">æœ€è¿‘å·¥ä½œ</td>
 																</tr>
 																<tr>
-																	<td valign="top" class="keys">Ö°Î»£º</td>
-																	<td valign="top" class="txt2">WebÇ°¶Ë¿ª·¢/ºó¶Ë¿ª·¢</td>
+																	<td valign="top" class="keys">èŒä½ï¼š</td>
+																	<td valign="top" class="txt2">Webå‰ç«¯å¼€å‘/åç«¯å¼€å‘</td>
 																</tr>
 																<tr>
-																	<td valign="top" class="keys">¹«Ë¾£º</td>
-																	<td valign="top" class="txt2">¸ÊËàÖĞÌìÒ©Òµ¹É·İÓĞÏŞ¹«Ë¾</td>
+																	<td valign="top" class="keys">å…¬å¸ï¼š</td>
+																	<td valign="top" class="txt2">ç”˜è‚ƒä¸­å¤©è¯ä¸šè‚¡ä»½æœ‰é™å…¬å¸</td>
 																</tr>
 																<tr>
-																	<td valign="top" class="keys">ĞĞÒµ£º</td>
-																	<td valign="top" class="txt2">»¥ÁªÍø/µç×ÓÉÌÎñ</td>
+																	<td valign="top" class="keys">è¡Œä¸šï¼š</td>
+																	<td valign="top" class="txt2">äº’è”ç½‘/ç”µå­å•†åŠ¡</td>
 																</tr>
 															</tbody>
 														</table>
@@ -549,19 +106,19 @@
 															</thead>
 															<tbody>
 																<tr>
-																	<td colspan="2" class="plate2">×î¸ßÑ§Àú/Ñ§Î»</td>
+																	<td colspan="2" class="plate2">æœ€é«˜å­¦å†/å­¦ä½</td>
 																</tr>
 																<tr>
-																	<td valign="top" class="keys">×¨Òµ£º</td>
-																	<td valign="top" class="txt2">¼ÆËã»ú¿ÆÑ§Óë¼¼Êõ</td>
+																	<td valign="top" class="keys">ä¸“ä¸šï¼š</td>
+																	<td valign="top" class="txt2">è®¡ç®—æœºç§‘å­¦ä¸æŠ€æœ¯</td>
 																</tr>
 																<tr>
-																	<td valign="top" class="keys">Ñ§Ğ££º</td>
-																	<td valign="top" class="txt2">ÃàÑôÖ°Òµ¼¼ÊõÑ§Ôº</td>
+																	<td valign="top" class="keys">å­¦æ ¡ï¼š</td>
+																	<td valign="top" class="txt2">ç»µé˜³èŒä¸šæŠ€æœ¯å­¦é™¢</td>
 																</tr>
 																<tr>
-																	<td valign="top" class="keys">Ñ§Àú/Ñ§Î»£º</td>
-																	<td valign="top" class="txt2">´ó×¨</td>
+																	<td valign="top" class="keys">å­¦å†/å­¦ä½ï¼š</td>
+																	<td valign="top" class="txt2">å¤§ä¸“</td>
 																</tr>
 															</tbody>
 														</table>
@@ -573,11 +130,11 @@
 								</tr>
 							</tbody>
 						</table>
-						<!--¸öÈËĞÅÏ¢-->
+						<!--ä¸ªäººä¿¡æ¯-->
 						<table cellspacing="0" cellpadding="0" border="0" class="box">
 							<tbody>
 								<tr>
-									<td class="plate1">¸öÈËĞÅÏ¢</td>
+									<td class="plate1">ä¸ªäººä¿¡æ¯</td>
 								</tr>
 								<tr>
 									<td class="tba">
@@ -588,8 +145,8 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">»§¿Ú/¹ú¼®£º</td>
-																	<td valign="top" class="txt2">°ÍÖĞ</td>
+																	<td valign="top" class="keys">æˆ·å£/å›½ç±ï¼š</td>
+																	<td valign="top" class="txt2">å·´ä¸­</td>
 																</tr>
 															</tbody>
 														</table>
@@ -601,8 +158,8 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">»éÒö×´Ì¬£º</td>
-																	<td valign="top" class="txt2">Î´»é</td>
+																	<td valign="top" class="keys">å©šå§»çŠ¶æ€ï¼š</td>
+																	<td valign="top" class="txt2">æœªå©š</td>
 																</tr>
 															</tbody>
 														</table>
@@ -614,8 +171,8 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">ÕşÖÎÃæÃ²£º</td>
-																	<td valign="top" class="txt2">¹²ÇàÍÅÔ±</td>
+																	<td valign="top" class="keys">æ”¿æ²»é¢è²Œï¼š</td>
+																	<td valign="top" class="txt2">å…±é’å›¢å‘˜</td>
 																</tr>
 															</tbody>
 														</table>
@@ -628,12 +185,12 @@
 								</tr>
 							</tbody>
 						</table>
-						<!--Ä¿Ç°ÄêÊÕÈë-->
-						<!--ÇóÖ°ÒâÏò-->
+						<!--ç›®å‰å¹´æ”¶å…¥-->
+						<!--æ±‚èŒæ„å‘-->
 						<table cellspacing="0" cellpadding="0" border="0" class="box">
 							<tbody>
 								<tr>
-									<td class="plate1">ÇóÖ°ÒâÏò</td>
+									<td class="plate1">æ±‚èŒæ„å‘</td>
 								</tr>
 								<tr>
 									<td class="tba">
@@ -650,15 +207,15 @@
 															</thead>
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">¸öÈË±êÇ©£º</td>
+																	<td valign="top" class="keys">ä¸ªäººæ ‡ç­¾ï¼š</td>
 																	<td valign="top" class="txt1">
-																		<span class="tag">webÇ°¶Ë&nbsp;</span>
-																		<span class="tag">ÊµÏ°Éú&nbsp;</span>
+																		<span class="tag">webå‰ç«¯&nbsp;</span>
+																		<span class="tag">å®ä¹ ç”Ÿ&nbsp;</span>
 																		<span class="tag">vue&nbsp;</span>
 																		<span class="tag">HTML&nbsp;</span>
 																		<span class="tag">css&nbsp;</span>
 																		<span class="tag">JavaScript&nbsp;</span>
-																		<span class="tag">ÒÆ¶¯Ç°¶Ë</span>
+																		<span class="tag">ç§»åŠ¨å‰ç«¯</span>
 																	</td>
 																</tr>
 															</tbody>
@@ -670,9 +227,10 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">ÆÚÍûĞ½×Ê£º</td>
+																	<td valign="top" class="keys">æœŸæœ›è–ªèµ„ï¼š</td>
 																	<td valign="top" class="txt2">
-																		3000-5000 Ôª/ÔÂ </td>
+																		3000-5000 å…ƒ/æœˆ
+																	</td>
 																</tr>
 															</tbody>
 														</table>
@@ -681,11 +239,11 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">µØµã£º</td>
+																	<td valign="top" class="keys">åœ°ç‚¹ï¼š</td>
 																	<td valign="top" class="txt2">
-																		<span class="tag">³É¶¼&nbsp;</span>
-																		<span class="tag">ÖØÇì&nbsp;</span>
-																		<span class="tag">ÃàÑô</span>
+																		<span class="tag">æˆéƒ½&nbsp;</span>
+																		<span class="tag">é‡åº†&nbsp;</span>
+																		<span class="tag">ç»µé˜³</span>
 																	</td>
 																</tr>
 															</tbody>
@@ -697,10 +255,10 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">Ö°ÄÜ/Ö°Î»£º</td>
+																	<td valign="top" class="keys">èŒèƒ½/èŒä½ï¼š</td>
 																	<td valign="top" class="txt2">
-																		<span class="tag">WebÇ°¶Ë¿ª·¢</span>
-																		<span class="tag">&nbsp;&nbsp;Ç°¶Ë¿ª·¢£¬Ç°¶ËÊµÏ°</span>
+																		<span class="tag">Webå‰ç«¯å¼€å‘</span>
+																		<span class="tag">&nbsp;&nbsp;å‰ç«¯å¼€å‘ï¼Œå‰ç«¯å®ä¹ </span>
 																	</td>
 																</tr>
 															</tbody>
@@ -710,10 +268,9 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">ĞĞÒµ£º</td>
+																	<td valign="top" class="keys">è¡Œä¸šï¼š</td>
 																	<td valign="top" class="txt2">
-																		<span class="tag">
-																			¼ÆËã»úÈí¼ş </span>
+																		<span class="tag"> è®¡ç®—æœºè½¯ä»¶ </span>
 																	</td>
 																</tr>
 															</tbody>
@@ -725,8 +282,8 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">µ½¸ÚÊ±¼ä£º</td>
-																	<td valign="top" class="txt2">´ı¶¨</td>
+																	<td valign="top" class="keys">åˆ°å²—æ—¶é—´ï¼š</td>
+																	<td valign="top" class="txt2">å¾…å®š</td>
 																</tr>
 															</tbody>
 														</table>
@@ -735,8 +292,8 @@
 														<table cellspacing="0" cellpadding="0" border="0">
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">¹¤×÷ÀàĞÍ£º</td>
-																	<td valign="top" class="txt2">ÊµÏ°</td>
+																	<td valign="top" class="keys">å·¥ä½œç±»å‹ï¼š</td>
+																	<td valign="top" class="txt2">å®ä¹ </td>
 																</tr>
 															</tbody>
 														</table>
@@ -753,16 +310,28 @@
 															</thead>
 															<tbody>
 																<tr>
-																	<td valign="top" class="keys">×ÔÎÒÆÀ¼Û£º</td>
-																	<td valign="top" class="txt1">±¾ÈË¾ßÓĞ½ÏÔúÊµµÄµÄ×¨Òµ¼¼ÄÜ£¬Ë¼Ïë¶ËÕı£¬ÊÊÓ¦Á¦Ç¿£¬ÓĞÒ»¶¨µÄÖĞĞ¡ĞÍÏîÄ¿demo¿ª·¢¾­Ñé£¬¾ßÓĞ×ÔÖ÷±à³ÌÄÜÁ¦¼°ÍÅ¶ÓºÏ×÷£¬ÍÅ¶Ó½»Á÷£¬ÉÆÓÚ¿ìËÙÑ§Ï°²¢Ê¹ÓÃĞÂ¼¼Êõ£¬ÓĞ½ÏºÃµÄ×ÔÑ§ÄÜÁ¦¡£<br>ÕÆÎÕÁË<warp
-																		 class="bg-with-blue">HTML£¨5£©</warp>ºÍ³£ÓÃµÄ<warp class="bg-with-blue">CSS£¨3£©</warp>£¬¾ßÓĞÏñËØ¼¶»¹Ô­Éè¼Æ¸åµÄÄÜÁ¦<br>ÊìÏ¤ÕÆÎÕÔ­ÉúµÄJavaScript£¬ºÍÖØÒª¸ÅÄî:<warp
-																		 class="bg-with-blue">Ô­ĞÍ</warp>£¬<warp class="bg-with-blue">±Õ°ü</warp>£¬<warp class="bg-with-blue">×÷ÓÃÓò</warp>£¬<warp
-																		 class="bg-with-blue">ÃæÏò¶ÔÏó</warp>£¬<warp class="bg-with-blue">Òì²½Á÷³Ì¿ØÖÆ</warp><br>ÊìÏ¤vue¿ò¼Ü¼°Ïà¹ØÁ÷ĞĞ¿âµÄÊ¹ÓÃ£¬<warp
-																		 class="bg-with-f90">Àí½âÖØÒª¸ÅÄî</warp>:ÉúÃüÖÜÆÚ£¬ĞéÄâdom£¬ĞÔÄÜÓÅ»¯£¬Êı¾İ¹²Ïí£¬×é¼ş´«ÖµµÈ£¬²¢ÓĞÏà¹ØÊµÕ½ÏîÄ¿²È¿Ó£¨·¢ÏÖÎÊÌâ£©ÍÑ¿Ó£¨½â¾öÎÊÌâ£©µÄ¾­Ñé<br>ÊìÏ¤<warp
-																		 class="bg-with-blue">httpĞ­Òé</warp>¼°ä¯ÀÀÆ÷äÖÈ¾Ô­ÀíÇ°¶Ë<warp class="bg-with-blue">ĞÔÄÜÓÅ»¯</warp>²ßÂÔ£¬Çå³ş<warp class="bg-with-blue">Ç°ºó¶ËäÖÈ¾</warp>µÄÇø±ğ<br>ÊìÏ¤<warp
-																		 class="bg-with-f90">npm£¦Git</warp>£¬<warp class="bg-with-f90">webpack</warp>£¬<warp class="bg-with-f90">shell</warp>µÈÃüÁîĞĞ¹¤¾ß<br>ÓĞÒ»¶¨µÄºó¶Ë¾­Ñé£¬¿ÉÒÔÊ¹ÓÃ<warp
-																		 class="bg-with-blue">php</warp>´îÅä<warp class="bg-with-blue">mysql</warp>»ò<warp class="bg-with-blue">node</warp>´îÅä<warp
-																		 class="bg-with-blue">express¡¢mongoDB</warp>Íê³É»ù±¾µÄºóÌ¨¿ª·¢<br>¸öÈË´úÂë·ç¸ñ½Ó½üÓÚ<warp class="bg-with-3f4160">°®±ËÓ­javascript</warp>´úÂë·ç¸ñ<br>ÓÉÓÚÎ´½Ó´¥¹ıÆóÒµ¹æ·¶ÏîÄ¿£¬ºÜ¶à·½Ãæ»¹ºÜÇ·È±£¬ËùÒÔÏ£ÍûHR£¬¹ó¹«Ë¾¸ø¸öÀúÁ·£¬Ñ§Ï°µÄ»ú»á£¬Ğ»Ğ»</td>
+																	<td valign="top" class="keys">è‡ªæˆ‘è¯„ä»·ï¼š</td>
+																	<td valign="top" class="txt1">
+																		æœ¬äººå…·æœ‰è¾ƒæ‰å®çš„çš„ä¸“ä¸šæŠ€èƒ½ï¼Œæ€æƒ³ç«¯æ­£ï¼Œé€‚åº”åŠ›å¼ºï¼Œæœ‰ä¸€å®šçš„ä¸­å°å‹é¡¹ç›®demoå¼€å‘ç»éªŒï¼Œå…·æœ‰è‡ªä¸»ç¼–ç¨‹èƒ½åŠ›åŠå›¢é˜Ÿåˆä½œï¼Œå›¢é˜Ÿäº¤æµï¼Œå–„äºå¿«é€Ÿå­¦ä¹ å¹¶ä½¿ç”¨æ–°æŠ€æœ¯ï¼Œæœ‰è¾ƒå¥½çš„è‡ªå­¦èƒ½åŠ›ã€‚<br />æŒæ¡äº†<warp
+																			class="bg-with-blue"
+																			>HTMLï¼ˆ5ï¼‰</warp
+																		>å’Œå¸¸ç”¨çš„<warp class="bg-with-blue">CSSï¼ˆ3ï¼‰</warp>ï¼Œå…·æœ‰åƒç´ çº§è¿˜åŸè®¾è®¡ç¨¿çš„èƒ½åŠ›<br />ç†Ÿæ‚‰æŒæ¡åŸç”Ÿçš„JavaScriptï¼Œå’Œé‡è¦æ¦‚å¿µ:<warp
+																			class="bg-with-blue"
+																			>åŸå‹</warp
+																		>ï¼Œ<warp class="bg-with-blue">é—­åŒ…</warp>ï¼Œ<warp class="bg-with-blue">ä½œç”¨åŸŸ</warp>ï¼Œ<warp class="bg-with-blue">é¢å‘å¯¹è±¡</warp
+																		>ï¼Œ<warp class="bg-with-blue">å¼‚æ­¥æµç¨‹æ§åˆ¶</warp><br />ç†Ÿæ‚‰vueæ¡†æ¶åŠç›¸å…³æµè¡Œåº“çš„ä½¿ç”¨ï¼Œ<warp class="bg-with-f90"
+																			>ç†è§£é‡è¦æ¦‚å¿µ</warp
+																		>:ç”Ÿå‘½å‘¨æœŸï¼Œè™šæ‹Ÿdomï¼Œæ€§èƒ½ä¼˜åŒ–ï¼Œæ•°æ®å…±äº«ï¼Œç»„ä»¶ä¼ å€¼ç­‰ï¼Œå¹¶æœ‰ç›¸å…³å®æˆ˜é¡¹ç›®è¸©å‘ï¼ˆå‘ç°é—®é¢˜ï¼‰è„±å‘ï¼ˆè§£å†³é—®é¢˜ï¼‰çš„ç»éªŒ<br />ç†Ÿæ‚‰<warp
+																			class="bg-with-blue"
+																			>httpåè®®</warp
+																		>åŠæµè§ˆå™¨æ¸²æŸ“åŸç†å‰ç«¯<warp class="bg-with-blue">æ€§èƒ½ä¼˜åŒ–</warp>ç­–ç•¥ï¼Œæ¸…æ¥š<warp class="bg-with-blue">å‰åç«¯æ¸²æŸ“</warp
+																		>çš„åŒºåˆ«<br />ç†Ÿæ‚‰<warp class="bg-with-f90">npmï¼†Git</warp>ï¼Œ<warp class="bg-with-f90">webpack</warp>ï¼Œ<warp class="bg-with-f90"
+																			>shell</warp
+																		>ç­‰å‘½ä»¤è¡Œå·¥å…·<br />æœ‰ä¸€å®šçš„åç«¯ç»éªŒï¼Œå¯ä»¥ä½¿ç”¨<warp class="bg-with-blue">php</warp>æ­é…<warp class="bg-with-blue">mysql</warp
+																		>æˆ–<warp class="bg-with-blue">node</warp>æ­é…<warp class="bg-with-blue">expressã€mongoDB</warp
+																		>å®ŒæˆåŸºæœ¬çš„åå°å¼€å‘<br />ä¸ªäººä»£ç é£æ ¼æ¥è¿‘äº<warp class="bg-with-3f4160">çˆ±å½¼è¿javascript</warp
+																		>ä»£ç é£æ ¼<br />ç”±äºæœªæ¥è§¦è¿‡ä¼ä¸šè§„èŒƒé¡¹ç›®ï¼Œå¾ˆå¤šæ–¹é¢è¿˜å¾ˆæ¬ ç¼ºï¼Œæ‰€ä»¥å¸Œæœ›HRï¼Œè´µå…¬å¸ç»™ä¸ªå†ç»ƒï¼Œå­¦ä¹ çš„æœºä¼šï¼Œè°¢è°¢
+																	</td>
 																</tr>
 															</tbody>
 														</table>
@@ -774,11 +343,11 @@
 								</tr>
 							</tbody>
 						</table>
-						<!--¹¤×÷¾­Ñé-->
+						<!--å·¥ä½œç»éªŒ-->
 						<table cellspacing="0" cellpadding="0" border="0" class="box">
 							<tbody>
 								<tr>
-									<td class="plate1">¹¤×÷¾­Ñé</td>
+									<td class="plate1">å·¥ä½œç»éªŒ</td>
 								</tr>
 								<tr>
 									<td class="tbb">
@@ -789,24 +358,23 @@
 														<tbody>
 															<tr>
 																<td valign="top" class="time">2019/11-2019/12</td>
-																<td valign="top" class="rtbox">
-																	<strong class="txt3">WebÇ°¶Ë¿ª·¢/ºó¶Ë¿ª·¢</strong><span class="p5">|</span><span>ÔËÓª²¿</span> </td>
+																<td valign="top" class="rtbox"><strong class="txt3">Webå‰ç«¯å¼€å‘/åç«¯å¼€å‘</strong><span class="p5">|</span><span>è¿è¥éƒ¨</span></td>
 															</tr>
 															<tr>
-																<td class="phd tb1" colspan="2">
-																	<span>¸ÊËàÖĞÌìÒ©Òµ¹É·İÓĞÏŞ¹«Ë¾</span><span class="gray">&nbsp;[1¸öÔÂ]</span>
-																</td>
+																<td class="phd tb1" colspan="2"><span>ç”˜è‚ƒä¸­å¤©è¯ä¸šè‚¡ä»½æœ‰é™å…¬å¸</span><span class="gray">&nbsp;[1ä¸ªæœˆ]</span></td>
 															</tr>
 															<tr>
-																<td class="phd tb1 gray2" colspan="2">»¥ÁªÍø/µç×ÓÉÌÎñ<span class="p5">|</span>ÉÙÓÚ50ÈË<span class="p5">|</span>ÃñÓª¹«Ë¾</td>
+																<td class="phd tb1 gray2" colspan="2">äº’è”ç½‘/ç”µå­å•†åŠ¡<span class="p5">|</span>å°‘äº50äºº<span class="p5">|</span>æ°‘è¥å…¬å¸</td>
 															</tr>
 															<tr>
 																<td class="tb1" colspan="2">
 																	<table cellspacing="0" cellpadding="0" border="0">
 																		<tbody>
 																			<tr>
-																				<td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-																				<td valign="top" class="txt1">¹¤×÷ÄÚÈİ:<br>1.¸ÃÏîÄ¿Ö÷ÒªÊÇÕë¶Ô¸ÃÒ½ÔºµÄÇé¿ö£¬ÖÆ×÷ÓÃÓÚĞû´«Õ¹Ê¾µÄÒ»¸öÍøÕ¾£¬ÏîÄ¿Ç°¶ËÒ³Ãæ±âÆ½»¯Éè¼Æ·Ç³£Æ¯ÁÁµÄ£¬ºóÌ¨¹ÜÀíÏµÍ³¿ÉÒÔ±à¼­Ò»Ğ©Ç°¶ËÒ³ÃæÄÚÈİÒÔ¼°Êı¾İ¹ÜÀí¡£<br>2.ÓÉÓÚÏîÄ¿ÈËÊÖ½ÏÉÙ£¬ËùÒÔÎÒ¸öÈË¸ºÔğµÄ¶«Î÷Í¦¶àµÄ£¬°üÀ¨ÁËÇ°¶ËÒ³ÃæÖÆ×÷£¬ºó¶Ë½Ó¿ÚAPI±àĞ´£¬Êı¾İ¿âÊı¾İ¹ÜÀíµÈ£¬ÏîÄ¿×îÖÕÊÇ¾ßÓĞÍ¬ĞĞÍøÕ¾µÄ±ê×¼Ë®Æ½£¬×öÁË¼òµ¥µÄSEO£¬Ò³ÃæĞÔÄÜÓÅ»¯</td>
+																				<td valign="top" class="keys">å·¥ä½œæè¿°ï¼š</td>
+																				<td valign="top" class="txt1">
+																					å·¥ä½œå†…å®¹:<br />1.è¯¥é¡¹ç›®ä¸»è¦æ˜¯é’ˆå¯¹è¯¥åŒ»é™¢çš„æƒ…å†µï¼Œåˆ¶ä½œç”¨äºå®£ä¼ å±•ç¤ºçš„ä¸€ä¸ªç½‘ç«™ï¼Œé¡¹ç›®å‰ç«¯é¡µé¢æ‰å¹³åŒ–è®¾è®¡éå¸¸æ¼‚äº®çš„ï¼Œåå°ç®¡ç†ç³»ç»Ÿå¯ä»¥ç¼–è¾‘ä¸€äº›å‰ç«¯é¡µé¢å†…å®¹ä»¥åŠæ•°æ®ç®¡ç†ã€‚<br />2.ç”±äºé¡¹ç›®äººæ‰‹è¾ƒå°‘ï¼Œæ‰€ä»¥æˆ‘ä¸ªäººè´Ÿè´£çš„ä¸œè¥¿æŒºå¤šçš„ï¼ŒåŒ…æ‹¬äº†å‰ç«¯é¡µé¢åˆ¶ä½œï¼Œåç«¯æ¥å£APIç¼–å†™ï¼Œæ•°æ®åº“æ•°æ®ç®¡ç†ç­‰ï¼Œé¡¹ç›®æœ€ç»ˆæ˜¯å…·æœ‰åŒè¡Œç½‘ç«™çš„æ ‡å‡†æ°´å¹³ï¼Œåšäº†ç®€å•çš„SEOï¼Œé¡µé¢æ€§èƒ½ä¼˜åŒ–
+																				</td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -821,11 +389,11 @@
 								</tr>
 							</tbody>
 						</table>
-						<!-- ÏîÄ¿¾­Ñé -->
+						<!-- é¡¹ç›®ç»éªŒ -->
 						<table cellspacing="0" cellpadding="0" border="0" class="box">
 							<tbody>
 								<tr>
-									<td class="plate1">ÏîÄ¿¾­Ñé</td>
+									<td class="plate1">é¡¹ç›®ç»éªŒ</td>
 								</tr>
 								<tr>
 									<td class="tba">
@@ -837,7 +405,7 @@
 															<tr>
 																<td valign="top" class="time">2020/1-2020/1</td>
 																<td valign="top" class="rtbox">
-																	<strong>¡¶ Life Circle ¡·APP</strong>
+																	<strong>ã€Š Life Circle ã€‹APP</strong>
 																</td>
 															</tr>
 															<tr>
@@ -845,8 +413,10 @@
 																	<table cellspacing="0" cellpadding="0" border="0">
 																		<tbody>
 																			<tr>
-																				<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-																				<td valign="top" class="txt1">¸ÃÏîÄ¿ÊÇ×÷Îª±ÏÒµÉè¼ÆµÄ×÷Æ·£¬ÏîÄ¿¼¼ÊõÕ»ÓĞ:HTML£¬CSS£¬less£¬JavaScript£¬Vue.js£¬Uni-appÒÆ¶¯¶Ë¿ò¼Ü<br>Õû¸öÏîÄ¿UI²ÉÓÃ±âÆ½»¯Éè¼Æ£¬es6Óï·¨,´úÂë½á¹¹Æ½ĞĞ£¬×é¼ş»¯µÄË¼Ïë£¬¼ÈÃÀ¹ÛÓÖÒ×ÓÚÎ¬»¤</td>
+																				<td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+																				<td valign="top" class="txt1">
+																					è¯¥é¡¹ç›®æ˜¯ä½œä¸ºæ¯•ä¸šè®¾è®¡çš„ä½œå“ï¼Œé¡¹ç›®æŠ€æœ¯æ ˆæœ‰:HTMLï¼ŒCSSï¼Œlessï¼ŒJavaScriptï¼ŒVue.jsï¼ŒUni-appç§»åŠ¨ç«¯æ¡†æ¶<br />æ•´ä¸ªé¡¹ç›®UIé‡‡ç”¨æ‰å¹³åŒ–è®¾è®¡ï¼Œes6è¯­æ³•,ä»£ç ç»“æ„å¹³è¡Œï¼Œç»„ä»¶åŒ–çš„æ€æƒ³ï¼Œæ—¢ç¾è§‚åˆæ˜“äºç»´æŠ¤
+																				</td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -863,7 +433,7 @@
 															<tr>
 																<td valign="top" class="time">2019/11-2019/12</td>
 																<td valign="top" class="rtbox">
-																	<strong>¸ÊËàÌìÓşÒ½ÔºÍøÕ¾</strong>
+																	<strong>ç”˜è‚ƒå¤©èª‰åŒ»é™¢ç½‘ç«™</strong>
 																</td>
 															</tr>
 															<tr>
@@ -871,8 +441,8 @@
 																	<table cellspacing="0" cellpadding="0" border="0">
 																		<tbody>
 																			<tr>
-																				<td valign="top" class="keys">ËùÊô¹«Ë¾£º</td>
-																				<td valign="top" class="txt1">¸ÊËàÖĞÌìÒ©Òµ¹É·İÓĞÏŞ¹«Ë¾</td>
+																				<td valign="top" class="keys">æ‰€å±å…¬å¸ï¼š</td>
+																				<td valign="top" class="txt1">ç”˜è‚ƒä¸­å¤©è¯ä¸šè‚¡ä»½æœ‰é™å…¬å¸</td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -883,8 +453,10 @@
 																	<table cellspacing="0" cellpadding="0" border="0">
 																		<tbody>
 																			<tr>
-																				<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-																				<td valign="top" class="txt1">¸ÃÏîÄ¿Ö÷ÒªÊÇÖÆ×÷ÌìÓşÒ½Ôº¹Ù·½ÍøÕ¾£¬°üÀ¨Ç°¶ËÒ³ÃæµÄÖÆ×÷£¬ÒÔ¼°ºóÌ¨¹ÜÀíÒ³ÃæµÄµÄÖÆ×÷£¬ºÍÊı¾İ¿âµÄ½¨Éè¡£¸ÃÏîÄ¿Ê¹ÓÃÁËHTML£¬css£¬JavaScript£¬ajax£¬php£¬MySQLµÈ¼¼Êõ£¬ÓÉÓÚÊÇ±¾ÈËµÚÒ»´Î½ÓÊÖÍêÕûÏîÄ¿µÄ¿ª·¢£¬´ÓÁãµ½ÓĞ£¬Óöµ½¹ıºÜ¶àµÄÎÊÌâ£¬ÈçÇ°¶ÎÊı¾İÌ«´ó£¬²»ÄÜÈë¿âµÈµÈ£¬×îÖÕ¾­¹ıÓÅ»¯Êı¾İ¸ñÊ½£¬ÎÊÌâÍêÃÀ½â¾ö£¬×îÖÕÍøÕ¾Ò²¾ßÓĞÍ¬ĞĞÍøÕ¾Ó¦ÓĞµÄÄÚÈİ¼°¹¦ÄÜ</td>
+																				<td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+																				<td valign="top" class="txt1">
+																					è¯¥é¡¹ç›®ä¸»è¦æ˜¯åˆ¶ä½œå¤©èª‰åŒ»é™¢å®˜æ–¹ç½‘ç«™ï¼ŒåŒ…æ‹¬å‰ç«¯é¡µé¢çš„åˆ¶ä½œï¼Œä»¥åŠåå°ç®¡ç†é¡µé¢çš„çš„åˆ¶ä½œï¼Œå’Œæ•°æ®åº“çš„å»ºè®¾ã€‚è¯¥é¡¹ç›®ä½¿ç”¨äº†HTMLï¼Œcssï¼ŒJavaScriptï¼Œajaxï¼Œphpï¼ŒMySQLç­‰æŠ€æœ¯ï¼Œç”±äºæ˜¯æœ¬äººç¬¬ä¸€æ¬¡æ¥æ‰‹å®Œæ•´é¡¹ç›®çš„å¼€å‘ï¼Œä»é›¶åˆ°æœ‰ï¼Œé‡åˆ°è¿‡å¾ˆå¤šçš„é—®é¢˜ï¼Œå¦‚å‰æ®µæ•°æ®å¤ªå¤§ï¼Œä¸èƒ½å…¥åº“ç­‰ç­‰ï¼Œæœ€ç»ˆç»è¿‡ä¼˜åŒ–æ•°æ®æ ¼å¼ï¼Œé—®é¢˜å®Œç¾è§£å†³ï¼Œæœ€ç»ˆç½‘ç«™ä¹Ÿå…·æœ‰åŒè¡Œç½‘ç«™åº”æœ‰çš„å†…å®¹åŠåŠŸèƒ½
+																				</td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -895,8 +467,10 @@
 																	<table cellspacing="0" cellpadding="0" border="0">
 																		<tbody>
 																			<tr>
-																				<td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
-																				<td valign="top" class="txt1">ÔÚÏîÄ¿ÖĞ±¾ÈËÖ÷Òª¸ºÔğÇ°¶ËÒ³ÃæºÍºóÌ¨Ò³ÃæÖÆ×÷¼°Êı¾İ¶Ô½Ó£¬Ò³Ãæ½»»¥¹¦ÄÜµÄÊµÏÖ£¬ÊµÏÖÁËÇ°¶ËÍ¨¹ıJavaScript£¬ajaxÌá½»IDä¯ÀÀÖ¸¶¨ÓÃ»§£¬ÂÖ²¥Õ¹Ê¾£¬ÒÔ¼°¸÷¸öÒ³ÃæÊı¾İÖ®¼äµÄ¶Ô½Ó£¬ºó¶ËÍ¨¹ıphp£¬MySQLÍê³É¸÷ÖÖÊı¾İµÄ¹ÜÀí£¬ÒÔ¼°Ç°¶ËÒ³ÃæµÄÄÚÈİ¸ü¸Ä</td>
+																				<td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
+																				<td valign="top" class="txt1">
+																					åœ¨é¡¹ç›®ä¸­æœ¬äººä¸»è¦è´Ÿè´£å‰ç«¯é¡µé¢å’Œåå°é¡µé¢åˆ¶ä½œåŠæ•°æ®å¯¹æ¥ï¼Œé¡µé¢äº¤äº’åŠŸèƒ½çš„å®ç°ï¼Œå®ç°äº†å‰ç«¯é€šè¿‡JavaScriptï¼Œajaxæäº¤IDæµè§ˆæŒ‡å®šç”¨æˆ·ï¼Œè½®æ’­å±•ç¤ºï¼Œä»¥åŠå„ä¸ªé¡µé¢æ•°æ®ä¹‹é—´çš„å¯¹æ¥ï¼Œåç«¯é€šè¿‡phpï¼ŒMySQLå®Œæˆå„ç§æ•°æ®çš„ç®¡ç†ï¼Œä»¥åŠå‰ç«¯é¡µé¢çš„å†…å®¹æ›´æ”¹
+																				</td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -911,11 +485,11 @@
 								</tr>
 							</tbody>
 						</table>
-						<!--½ÌÓı¾­Àú-->
+						<!--æ•™è‚²ç»å†-->
 						<table class="box">
 							<tbody>
 								<tr>
-									<td class="plate1">½ÌÓı¾­Àú</td>
+									<td class="plate1">æ•™è‚²ç»å†</td>
 								</tr>
 								<tr>
 									<td class="tba">
@@ -927,10 +501,11 @@
 															<tr>
 																<td valign="top" class="time">2017/9-2020/6</td>
 																<td valign="top" class="rtbox">
-																	<strong>ÃàÑôÖ°Òµ¼¼ÊõÑ§Ôº</strong> </td>
+																	<strong>ç»µé˜³èŒä¸šæŠ€æœ¯å­¦é™¢</strong>
+																</td>
 															</tr>
 															<tr>
-																<td class="tb1" colspan="2">´ó×¨<span class="p5">|</span>¼ÆËã»ú¿ÆÑ§Óë¼¼Êõ </td>
+																<td class="tb1" colspan="2">å¤§ä¸“<span class="p5">|</span>è®¡ç®—æœºç§‘å­¦ä¸æŠ€æœ¯</td>
 															</tr>
 														</tbody>
 													</table>
@@ -941,20 +516,20 @@
 								</tr>
 							</tbody>
 						</table>
-						<!--ÔÚĞ£Çé¿ö-->
+						<!--åœ¨æ ¡æƒ…å†µ-->
 						<table cellspacing="0" cellpadding="0" border="0" class="box">
 							<tbody>
 								<tr>
-									<td class="plate1">ÔÚĞ£Çé¿ö</td>
+									<td class="plate1">åœ¨æ ¡æƒ…å†µ</td>
 								</tr>
 								<tr>
 									<td class="tbb">
-										<!--Ğ£ÄÚÈÙÓş-->
-										<!--Ğ£ÄÚÖ°Îñ-->
+										<!--æ ¡å†…è£èª‰-->
+										<!--æ ¡å†…èŒåŠ¡-->
 										<table cellspacing="0" cellpadding="0" border="0">
 											<tbody>
 												<tr>
-													<td class="tit">Ğ£ÄÚÖ°Îñ</td>
+													<td class="tit">æ ¡å†…èŒåŠ¡</td>
 												</tr>
 												<tr>
 													<td class="p15">
@@ -963,7 +538,7 @@
 																<tr>
 																	<td valign="top" class="time">2019/11-2019/12</td>
 																	<td valign="top" class="rtbox">
-																		<strong class="txt3">Éú»î²¿/ITÖ®¼Ò</strong>
+																		<strong class="txt3">ç”Ÿæ´»éƒ¨/ITä¹‹å®¶</strong>
 																	</td>
 																</tr>
 															</tbody>
@@ -976,21 +551,19 @@
 								</tr>
 							</tbody>
 						</table>
-						<!--¼¼ÄÜÌØ³¤-->
+						<!--æŠ€èƒ½ç‰¹é•¿-->
 						<table cellspacing="0" cellpadding="0" border="0" class="box">
 							<tbody>
 								<tr>
-									<td class="plate1">
-										¼¼ÄÜÌØ³¤ <span class="f12">£¨°üº¬IT¼¼ÄÜ¡¢ÓïÑÔÄÜÁ¦¡¢Ö¤Êé¡¢³É¼¨¡¢ÅàÑµ¾­Àú£©</span>
-									</td>
+									<td class="plate1">æŠ€èƒ½ç‰¹é•¿ <span class="f12">ï¼ˆåŒ…å«ITæŠ€èƒ½ã€è¯­è¨€èƒ½åŠ›ã€è¯ä¹¦ã€æˆç»©ã€åŸ¹è®­ç»å†ï¼‰</span></td>
 								</tr>
 								<tr>
 									<td class="tbb">
-										<!--¼¼ÄÜ/ÓïÑÔ-->
+										<!--æŠ€èƒ½/è¯­è¨€-->
 										<table cellspacing="0" cellpadding="0" border="0">
 											<tbody>
 												<tr>
-													<td class="tit">¼¼ÄÜ/ÓïÑÔ</td>
+													<td class="tit">æŠ€èƒ½/è¯­è¨€</td>
 												</tr>
 												<tr>
 													<td class="p15">
@@ -1006,7 +579,7 @@
 																					</td>
 																					<td valign="top">
 																						<span class="skbg">
-																							<span class="skco">ÊìÁ·</span>
+																							<span class="skco">ç†Ÿç»ƒ</span>
 																						</span>
 																					</td>
 																				</tr>
@@ -1022,7 +595,7 @@
 																					</td>
 																					<td valign="top">
 																						<span class="skbg">
-																							<span class="skco">ÊìÁ·</span>
+																							<span class="skco">ç†Ÿç»ƒ</span>
 																						</span>
 																					</td>
 																				</tr>
@@ -1040,7 +613,7 @@
 																					</td>
 																					<td valign="top">
 																						<span class="skbg">
-																							<span class="skco">ÊìÁ·</span>
+																							<span class="skco">ç†Ÿç»ƒ</span>
 																						</span>
 																					</td>
 																				</tr>
@@ -1056,7 +629,7 @@
 																					</td>
 																					<td valign="top">
 																						<span class="skbg">
-																							<span class="skco">Ò»°ã</span>
+																							<span class="skco">ä¸€èˆ¬</span>
 																						</span>
 																					</td>
 																				</tr>
@@ -1074,7 +647,7 @@
 																					</td>
 																					<td valign="top">
 																						<span class="skbg">
-																							<span class="skco">ÊìÁ·</span>
+																							<span class="skco">ç†Ÿç»ƒ</span>
 																						</span>
 																					</td>
 																				</tr>
@@ -1090,7 +663,7 @@
 																					</td>
 																					<td valign="top">
 																						<span class="skbg">
-																							<span class="skco">Á¼ºÃ</span>
+																							<span class="skco">è‰¯å¥½</span>
 																						</span>
 																					</td>
 																				</tr>
@@ -1104,13 +677,13 @@
 												</tr>
 											</tbody>
 										</table>
-										<!--Ö¤Êé-->
-										<!--ÅàÑµ¾­Àú-->
+										<!--è¯ä¹¦-->
+										<!--åŸ¹è®­ç»å†-->
 									</td>
 								</tr>
 							</tbody>
 						</table>
-						<!--¸½¼ÓĞÅÏ¢-->
+						<!--é™„åŠ ä¿¡æ¯-->
 					</td>
 				</tr>
 			</tbody>
