@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style>
+		td,th{
+			margin:0;
+			padding:0;
+		}
+		.container {
+			width: 600px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+		}
+
+		.container h3 {
+			font-weight: 400;
+		}
+
+		.container input[type='text'] {
+			box-sizing: border-box;
+			width: 80%;
+			height: 45px;
+			border-radius: 4px;
+			outline: none;
+			display: block;
+			border: 1px solid #ccc;
+			margin: 0 auto;
+			padding-left: 35px;
+		}
+
+		.container input[type='text']:focus {
+			border: 1px solid #dd001b;
+		}
+
+		.container input[type='button'] {
+			box-sizing: border-box;
+			width: 20%;
+			height: 35px;
+			display: block;
+			margin: 15px auto;
+			border-radius: 4px;
+			background: #DD001B;
+			border: none;
+			outline: none;
+			color: #fff;
+			transition: 0.3s;
+			font-size: 16px;
+			font-weight: 500;
+		}
+
+		.container input[type='button']:active {
+			transform: scale(1.08);
+		}
+
+		.text {
+			font-size: 12px;
+			color: #666;
+			margin-top:15px;
+			margin-bottom:10px;
+		}
+
+		#warpper {
+			max-height: 350px;
+			overflow-y: scroll;
+			/* border: 1px solid #f1f1f1; */
+		}
+
+		#warpper::-webkit-scrollbar {
+			width: 5px !important;
+		}
+
+		/* 滚动槽 */
+		#warpper::-webkit-scrollbar-track {
+			/* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important; */
+			border-radius: 10px !important;
+		}
+
+		/* 滚动条滑块 */
+		#warpper::-webkit-scrollbar-thumb {
+			border-radius: 10px !important;
+			background: rgba(0, 0, 0, 0.1) !important;
+			/* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5) !important; */
+		}
+		#warpper table{
+			width:100%;
+			text-align: center;
+			color:#666;
+		
+		}
+		#warpper table tr {
+			padding: 10px 0;
+			cursor: pointer;
+			padding:7.5px 0;
+		}
+		#warpper table th{
+			font-weight: 400;
+			font-size:16px;
+			color:#000;
+		}
+		#warpper table td{
+			font-weight: 400;
+			font-size:13px;
+		}
+		
+		#warpper table tr:hover{
+			background:#ccc;
+		}
+		#warpper table tr:first-child:hover{
+			background:none !important;
+		}
+		.audio{
+			width:75%;
+			margin:15px auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h3>听你想听</h3>
+		<input type="text" id="search-text" placeholder="想听的歌" />
+		<input type="button" id="go-search" value="搜索" onclick="userAnction.get_search_key();" />
+		<div id="warpper"></div>
+		<div class="audio">
+
+		</div>
+		<div class="text"></div>
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		"use strict";
+		// load文字
+		let a1 = null;
+		(function ($el) {
+			$.ajax({
+				url: 'https://api.imjad.cn/hitokoto/?encode=js&charset=utf-8',
+				type: 'get',
+				data: null,
+				success: function (a) {
+					a1 = a;
+					var str = a.substring(a.indexOf(">") + 1, a.indexOf('</span'));
+					$el.html(str)
+				}
+			})
+		})($('.text'))
+		//数据加载与呈现
+		var userAnction = {
+			search_input: $('#search-text'),
+			warp: $('#warpper'),
+			// 获取搜索关键词
+			get_search_key: function () {
+				var keyWord = this.search_input.val();
+				keyWord == "" ? alert('请输入内容') : this.go_search(keyWord);
+			},
+			// 发送请求获取数据
+			go_search: function (d) {
+				console.log(d)
+				$.ajax({
+					url: 'https://api.imjad.cn/cloudmusic/?type=search&search_type=1',
+					type: 'get',
+					data: {
+						s: d
+					},
+					success: function (a) {
+						if(!a.result){
+							return false;
+						}
+						var songArr = a.result.songs,
+							str = "<table><tr><th>歌曲</th><th>歌手</th><th>时长</th></tr>";
+						for (var i in songArr) {
+							if (songArr[i].publishTime !== 0) {
+								str += `<tr id="${songArr[i].id}">
+											<td>${songArr[i].ar[0].name}</td>
+											<td>${songArr[i].name}</td>
+											<td>${songArr[i].publishTime}</td>
+											<td>${songArr[i].publishTime}</td>
+										</tr>`;
+							}
+						}
+						str += '</table>';
+						userAnction.warp.html(str);
+					},
+					error:function(err){
+						console.log(err);
+					}
+				})
+				setTimeout(function(){
+					$('tr').each(function(){
+						$(this).click(function(){
+							userAnction.play($(this).attr('id'));
+						})
+					})
+				},1000)
+				
+			},
+			// https://api.imjad.cn/cloudmusic/?type=song&id=186436&br=128000
+			play:function(id){
+				$.ajax({
+					url: 'https://api.imjad.cn/cloudmusic/?type=song&br=128000',
+					type: 'get',
+					data: {
+						id:id
+					},
+			// <audio src="https://m7.music.126.net/20191004204953/176b534ee837551a0a6a811c341f3fb1/ymusic/015d/0059/065e/67740c9f7a73955cd7f31461ad05f7e0.mp3" controls="" autoplay="" style="width: 100%;"></audio>					
+					success: function (a) {
+						// $('.audio').html(`<audio src="${a.data[0].url}" controls="" autoplay="" style="width: 100%;"></audio><a target="_blank" href="./1.html?url=${a.data[0].url}">view</a>`)
+                        window.open(`./1.html?url=${a.data[0].url}`)
+					}
+				})
+			}
+		}
+	</script>
+</body>
+
+</html>
