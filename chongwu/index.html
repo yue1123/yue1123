@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>sweet house</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/animation.css" />
+		<link rel="icon" href="img/logo.ico" type="image/x-icon"/>
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript" src="js/all.js" ></script>
+	</head>
+	<body id="top">
+		
+		<div class="page">
+			<div class="btn-top"><img src="img/topicon.png"></div>      <!--返回顶部按钮-->
+			<div class="cebian"></div>
+			<div class="nav-div">
+				<nav>
+					<img src='img/logo.png'>					<!--logo-->
+					<ul>					<!--导航栏-->
+						<li>
+							<a href="index.html">首页</a>
+							<span class="border" id="short"></span>
+						</li>
+						<li>
+							<a href="kinds.html">宠物品种</a>
+							<span class="border" id="short2"></span>
+						</li>
+						<li>
+							<a href="things.html">宠物用品</a>
+							<span class="border" id="short3"></span>
+						</li>
+						<li>
+							<a href="refer.html">宠物咨询</a>
+							<span class="border" id="short4"></span>
+						</li>
+						<li>
+							<a href="baike.html">宠物百科</a>
+							<span class="border" id="short5"></span>
+						</li>
+						<li>
+							<a href="contact.html">联系我们</a>
+							<span class="border" id="short6"></span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="nofloat"></div>				<!--清除浮动-->
+			<section>
+				<div class="sousuo">
+					<div class="input-div">
+						<form action="kinds.html" method="get">
+							<input name="datas" type="text" placeholder="我的搜索" autocomplete="off" id="sousuo" />
+							<button class="sou_btn" type="submit">搜索</button>
+						</form>
+						
+						<div class="sousuo-list">
+							<ul>
+								<li class="a">金毛</li>
+								<li class="a">柴犬</li>
+								<li class="a">狗狗能用人的沐浴露吗?</li>
+								<li class="a">狗狗生病了怎么办</li>
+								<li class="a">小狗多大断奶</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="contact-div">
+					<h1>专业的宠物服务,涵盖了宠物的衣食住行等方面</h1>
+					<span class="btn-contact">联系我们</span>
+				</div>
+				<div class="nofloat"></div>				<!--清除浮动-->
+				<div class="fuwu-div">
+					<div class="text-div">
+						<img src="img/zhua.png">
+						<h1>---- 我们的服务 ----</h1>
+						<p>美好的陪伴来自温暖的生命</p>
+					</div>
+					<img src="img/gou.png">
+				</div>
+				<div class="show-div">
+					<div class="text">
+						<div class="text1">
+							<p>动物是人类的朋友。在这里，每一个热爱宠物的人<br/>
+							不但能找到他们想要的，而且能得到比他们想要的更多。</p>
+							<span id="kinds"><a href="#">更多品种 ></a></span>
+						</div>
+						<div class="text2">
+							<div class="text-div">
+								<h1>萌宠展示</h1>
+								<button id='last'><</button>
+								<button id='next'>></button>
+							</div>
+							<div class="text-div2" id="move-div">
+								<div class="img">
+									<a href="#">
+										<img src='img/img5-350x500.jpg'>
+									</a>
+									<div class="information">
+										<h3>金毛犬</h3>
+										<hr/>
+										<p>热情友善,自信且不怕生</p>
+									</div>
+								</div>
+								<div class="img">
+									<a href="#">
+										<img src="img/depositphotos_125040540_original-350x500.jpg">
+									</a>
+									<div class="information">
+										<h3>萨摩</h3>
+										<hr/>
+										<p>乖巧可爱,微笑天使</p>
+									</div>
+								</div>
+								<div class="img">
+									<a href="#">
+										<img src="img/img4-350x500.jpg">
+									</a>
+									<div class="information">
+										<h3>法国斗牛犬</h3>
+										<hr/>
+										<p>聪明敏捷  开朗不常吠</p>
+									</div>
+								</div>
+								<div class="img">
+									<a href="#">
+										<img src="img/Depositphotos_67927599_original-350x500.jpg">
+									</a>
+									<div class="information">
+										<h3>布偶猫</h3>
+										<hr/>
+										<p>温顺好静  对人友善</p>
+									</div>
+								</div>
+								<div class="img">
+									<a href="#">
+										<img src="img/Depositphotos_6699049_original-350x500.jpg">
+									</a>
+									<div class="information">
+										<h3>短毛猫</h3>
+										<hr/>
+										<p>生性聪明  性格温顺</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nofloat"></div>     <!--清除浮动-->
+				<div class="baozhang">
+					<div class="text-div">
+						<img src="img/zhua.png">
+						<h1>---- 我们的保障 ----</h1>
+						<p>让每一只宠物都得到它应有的保护</p>
+					</div>
+					<div class="text-div2">
+						<div class="text01">
+							<img src="img/ico1.png">
+							<h4>设备先进</h4>
+							<hr/>
+							<p>设施完备，设备先进，为他们提供了最大化的日常生活便利</p>
+						</div>
+						<div class="text01">
+							<img src="img/ico4.png" class="bigger">
+							<h4>优质的团队</h4>
+							<hr/>
+							<p>拥有多位教学经验丰富的A级宠物美容老师和注册宠物兽医师任教</p>
+						</div>
+						<div class="text01">
+							<img src="img/ico2.png">
+							<h4>宠物用品</h4>
+							<hr/>
+							<p>涉及了宠物食品、医疗保健品、洗护用品、用品用具、窝包服饰、宠物玩具、美容工具等</p>
+						</div>
+					</div>
+				</div>
+				<div class="nofloat"></div>     <!--清除浮动-->
+				<div class="bg">
+					<p>宠物之恋，在于关爱，让你的爱宠享受家的感觉</p>
+				</div>
+				<div class="zixun">
+					<div class="text-div">
+						<img src="img/zhua.png">
+						<h1>---- 萌宠展示 ----</h1>
+						<p>从分享你我的养宠心情到爱宠人之间的经验交流</p>
+					</div>
+					<div class="text">
+						<div class="neirong">
+							<div class="text-div2">
+								<div class="img">
+									<img src="img/img17-600x400.jpg">
+								</div>
+								<div class="text01">
+									<p>01</p>
+									<p class="color">NOV</p>
+								</div>
+								<div class="text02">
+									<h3>狗狗能用人的沐浴露吗</h3>
+									<p>如今越来越多的都市狗狗，都是长期生活与室内的，天天与人接触，保持身体的洁净是非常有必要的.....</p>
+								</div>
+							</div>
+							<div class="text-div2">
+								<div class="img">
+									<img src="img/new1.jpg">
+								</div>
+								<div class="text01">
+									<p>02</p>
+									<p class="color">NOV</p>
+								</div>
+								<div class="text02">
+									<h3>狗狗能用人的沐浴露吗</h3>
+									<p>如今越来越多的都市狗狗，都是长期生活与室内的，天天与人接触，保持身体的洁净是非常有必要的....</p>
+								</div>
+							</div>
+							<div class="text-div2">
+								<div class="img">
+									<img src="img/new1.jpg">
+								</div>
+								<div class="text01">
+									<p>03</p>
+									<p class="color">NOV</p>
+								</div>
+								<div class="text02">
+									<h3>狗狗能用人的沐浴露吗</h3>
+									<p>如今越来越多的都市狗狗，都是长期生活与室内的，天天与人接触，保持身体的洁净是非常有必要的....</p>
+								</div>
+							</div>
+							<div class="text-div2">
+								<div class="img">
+									<img src="img/new1.jpg">
+								</div>
+								<div class="text01">
+									<p>04</p>
+									<p class="color">NOV</p>
+								</div>
+								<div class="text02">
+									<h3>狗狗能用人的沐浴露吗</h3>
+									<p>如今越来越多的都市狗狗，都是长期生活与室内的，天天与人接触，保持身体的洁净是非常有必要的....</p>
+								</div>
+							</div>
+							<div class="text-div2">
+								<div class="img">
+									<img src="img/new1.jpg">
+								</div>
+								<div class="text01">
+									<p>05</p>
+									<p class="color">NOV</p>
+								</div>
+								<div class="text02">
+									<h3>狗狗能用人的沐浴露吗</h3>
+									<p>如今越来越多的都市狗狗，都是长期生活与室内的，天天与人接触，保持身体的洁净是非常有必要的....</p>
+								</div>
+							</div>
+							<div class="text-div2">
+								<div class="img">
+									<img src="img/new1.jpg">
+								</div>
+								<div class="text01">
+									<p>06</p>
+									<p class="color">NOV</p>
+								</div>
+								<div class="text02">
+									<h3>狗狗能用人的沐浴露吗</h3>
+									<p>如今越来越多的都市狗狗，都是长期生活与室内的，天天与人接触，保持身体的洁净是非常有必要的....</p>
+								</div>
+							</div>
+							<div class="nofloat"></div>     <!--清除浮动-->
+						</div>
+						<div class="ul">
+							<ul>
+								<li class="index"></li>
+								<li class="index"></li>
+								<li class="index"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="dwspy">
+					<img src="img/狗子.png">
+					<h1>动物是人类的好朋友</h1>
+					<p>从分享你我的养宠心情到爱宠人之间的经验交流，从网上购物到在线医疗，
+						宠物生活中涉及的方方面面，都在不断努力将它们做到最好。
+						在这里，每一个热爱宠物的人，
+						不但能找到他们想要的，而且能得到比他们想要的更多。</p>
+						<span class="btn-contact">联系我们</span>
+				</div>
+			</section>
+			<div class="nofloat"></div>     <!--清除浮动-->
+			<footer>
+				<div class="f-about">
+					<h2>关于我们</h2>
+					<img src="img/logo.png">
+					<p>让天下宠物得到人间关爱<br/>
+					是萌宠屋始终不变的企业愿景<br/>
+					这就是萌宠屋步步领先的秘诀所在</p>
+				</div>
+				<div class="f-fuwu">
+					<h2>我们的服务</h2>
+					<ul>
+						<li>
+							<a href="#">
+								<span class="jiantouico"></span>
+								宠物品种
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="jiantouico"></span>
+								萌宠咨询
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="jiantouico"></span>
+								宠物用品
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="jiantouico"></span>
+								联系我们
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="f-kinds">
+					<h2>萌宠品种</h2>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/kinds (2).jpg">
+								<p>法国斗牛犬</p>
+								<span>聪明敏捷  开朗不常吠</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/kinds (3).jpg">
+								<p>金毛</p>
+								<span>热情友善,自信且不怕生</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/kinds (4).jpg">
+								<p>萨摩</p>
+								<span>热情友善,自信且不怕生</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="banquan">
+					<p>(c) Copyright 2019 14S group. All Rights Reserved.</p>
+				</div>
+			</footer>
+			<div class="nofloat"></div>     <!--清除浮动-->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,345 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+.nofloat {
+	clear: both;
+}
+
+
+/*侧边栏*/
+
+.cebian {
+	width: 4%;
+	height: 850px;
+	position: fixed;
+	background: #000;
+	margin-left: 100%;
+}
+
+
+/*返回顶部按钮*/
+
+.btn-top {
+	position: fixed;
+	z-index: 99999;
+	top: 650px;
+	left: 94%;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.btn-top img{
+	padding-left: 8px;
+	position: relative;
+	top: 6px;
+}
+
+.btn-top:hover{
+	animation:n .5s;
+	animation-fill-mode: forwards;
+}
+/*page1*/
+
+.page {
+	width: 100%;
+	background: aliceblue;
+}
+
+.page .nav-div {
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	position: fixed;
+	z-index: 10;
+	box-shadow: 0 1px 15px #ccc;
+}
+
+.page nav {
+	width: 75%;
+	margin: 0 auto;
+	height: 70px;
+	min-height: 40px;
+	background: #fff;
+}
+
+.page nav img {
+	width: 10%;
+	float: left;
+	margin-top: 10px;
+}
+
+.page nav ul {
+	width: 65%;
+	margin-left: 35%;
+	text-align: center;
+}
+
+.page nav ul li {
+	float: left;
+	width: 16.66%;
+	line-height: 70px;
+	cursor: pointer;
+}
+
+.page nav ul li a {
+	color: #000;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+
+.page nav ul li:hover a {
+	color: #f1ad48;
+}
+
+.page nav ul li:hover span {
+	animation: y 0.5s;
+	display: block;
+}
+
+.page nav ul li span {
+	width: 55%;
+	margin: 0 auto;
+	display: none;
+	margin-top: -15px;
+	border-bottom: 2px solid #7c4c4c;
+}
+
+.page nav ul li #short {
+	width: 30%;
+}
+
+.page nav ul li #short3 {
+	display: block;
+}
+
+
+/*导航栏结束*/
+
+section .banner {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: 63px;
+}
+
+section .banner img {
+	width: 100%;
+	height: 400px;
+}
+
+section .shop {
+	margin-top: 100px;
+}
+
+section .text-div {
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+section .text-div img {
+	width: 7%;
+}
+
+section .text-div h1 {
+	font-size: 30px;
+	margin: 15px 0;
+}
+
+section .all-things {
+	width: 80%;
+	margin: 0 auto;
+}
+
+section .things {
+	width: 33%;
+	height: 450px;
+	float: left;
+	text-align: center;
+	margin: 25px 0;
+	cursor: pointer;
+}
+
+section .things .img {
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+section .things .img img {
+	width: 100%;
+}
+
+section .things .img img:hover {
+	animation: m .5s;
+	animation-fill-mode: forwards;
+}
+
+section .things .things-name {
+	color: #F1AD48;
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+section .things .price {
+	color: #F1AD48;
+	font-size: 15px;
+	padding: 15px 0;
+}
+
+section .things a {
+	font-size: 12px;
+	width: 10%;
+	height: 30px;
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #000;
+	padding: 5px 8px;
+	border-radius: 4px;
+}
+
+section .things a:hover {
+	animation: n .5s;
+	animation-fill-mode: forwards;
+}
+
+section .contact-div {
+	height: 70px;
+	background: #F1AD48;
+	line-height: 70px;
+	color: #fff;
+	margin-top: 25px;
+}
+
+section .contact-div span,
+section .contact-div h1 {
+	float: left;
+}
+
+section .contact-div h1 {
+	font-weight: 300;
+	margin-left: 10%;
+}
+
+section .contact-div span {
+	margin-left: 40%;
+	width: 10%;
+	height: 50px;
+	line-height: 50px;
+	border: 2px solid #fff;
+	display: block;
+	text-align: center;
+	margin-top: 9px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+section .contact-div span:hover {
+	animation: h .5s;
+	animation-fill-mode: forwards;
+}
+
+footer {
+	width: 100%;
+	height: 390px;
+	line-height: 27px;
+	background: #f6f5f2;
+}
+
+footer>div {
+	float: left;
+	margin-left: 13%;
+	width: 21%;
+}
+
+footer>div h2 {
+	font-weight: 300;
+	margin: 35px 0;
+	font-size: 23px;
+}
+
+footer .f-about img {
+	width: 40%;
+	margin: 25px 0;
+}
+
+footer .f-fuwu {
+	margin-left: 4%;
+}
+
+footer .f-fuwu ul li {
+	padding: 15px 0;
+	width: 100%;
+	border-bottom: 1px dotted #000;
+}
+
+footer a {
+	text-decoration: none;
+	color: #000;
+}
+
+footer a:hover {
+	color: #F1AD48;
+}
+
+footer .f-fuwu ul li a span {
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 4px dashed;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
+
+footer .f-kinds {
+	margin-left: 10%;
+}
+
+footer .f-kinds ul li {
+	padding: 15px 0;
+	border-bottom: 1px dotted #000;
+}
+
+footer .f-kinds ul li:nth-child(3) {
+	border-bottom: none;
+}
+
+footer .f-kinds ul li a:hover img {
+	opacity: 1;
+}
+
+footer .f-kinds img {
+	width: 27%;
+	float: left;
+	margin-right: 25px;
+	opacity: 0.7;
+}
+
+footer .f-kinds p {
+	font-size: 17px;
+}
+
+footer .f-kinds span {
+	font-size: 12px;
+	padding: 7.5px 0;
+}
+
+footer .banquan {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #fff;
+	margin-left: 0;
+}
