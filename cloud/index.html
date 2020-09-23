@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#button {
+				position: fixed;
+				top: 60vh;
+				left: 0;
+				background: #000;
+				width: 100px;
+				height: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="J_index_canvas" class="index-canvas" width="2048" height="1338"></canvas>
+		<script>
+			function drawCanvas() {
+				var c,
+					t = document.getElementById('J_index_canvas')
+				function i(c) {
+					;(this.size = 2 * Math.random()),
+						(this.speed = 0.07 * Math.random()),
+						(this.x = c.x),
+						(this.y = c.y)
+				}
+				function e() {
+					this.reset()
+				}
+				;(c =
+					window.requestAnimationFrame ||
+					window.mozRequestAnimationFrame ||
+					window.webkitRequestAnimationFrame ||
+					window.msRequestAnimationFrame ||
+					function (c) {
+						window.setTimeout(c, 1000 / 60)
+					}),
+					(window.requestAnimationFrame = c)
+				var n = t,
+					a = n.getContext('2d'),
+					s = window.innerWidth,
+					o = document.body.offsetHeight
+				;(n.width = s),
+					(n.height = o),
+					(a.fillStyle = '#090723'),
+					a.fillRect(0, 0, s, o),
+					(i.prototype.reset = function () {
+						;(this.size = 2 * Math.random()),
+							(this.speed = 0.05 * Math.random()),
+							(this.x = s),
+							(this.y = Math.random() * o)
+					}),
+					(i.prototype.update = function () {
+						;(this.x -= this.speed),
+							this.x < 0 ? this.reset() : a.fillRect(this.x, this.y, this.size, this.size)
+					}),
+					(e.prototype.reset = function () {
+						;(this.x = Math.random() * s),
+							(this.y = 0),
+							(this.len = 80 * Math.random() + 10),
+							(this.speed = 8 * Math.random() + 4),
+							(this.size = +Math.random() + 0.1),
+							(this.waitTime = new Date().getTime() + 3000 * Math.random() + 500),
+							(this.active = !1)
+					}),
+					(e.prototype.update = function () {
+						this.active
+							? ((this.x -= this.speed),
+							  (this.y += this.speed),
+							  this.x < 0 || this.y >= o
+									? this.reset()
+									: ((a.lineWidth = this.size),
+									  a.beginPath(),
+									  a.moveTo(this.x, this.y),
+									  a.lineTo(this.x + this.len, this.y - this.len),
+									  a.stroke()))
+							: this.waitTime < new Date().getTime() && (this.active = !0)
+					})
+				for (var l = [], r = 0; r < o; r += 4)
+					l.push(
+						new i({
+							x: Math.random() * s,
+							y: Math.random() * o,
+						})
+					)
+				l.push(new e()),
+					l.push(new e()),
+					(function c() {
+						;(a.fillStyle = '#090723'), a.fillRect(0, 0, s, o)
+						var t = 'rgba(255, 255, 255, 0.5)'
+						;(a.fillStyle = t), (a.strokeStyle = t)
+						for (var i = l.length; i--; ) l[i].update()
+						window.requestAnimationFrame(c)
+					})()
+			}
+			drawCanvas()
+		</script>
+	</body>
+</html>
