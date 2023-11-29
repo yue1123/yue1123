@@ -1,6 +1,6 @@
 ##  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="25" height="25" /> Hi there
 
-I'm Dh, A frontend developer
+I'm Dh, A fullStack developer
 
 Contact me at [GitHub](https://github.com/yue1123) | [Email](mailto:2572468699@qq.com)
 
