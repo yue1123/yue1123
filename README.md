@@ -29,7 +29,7 @@ Contact me at [GitHub](https://github.com/yue1123) | [Email](mailto:2572468699@q
 - [Vite Plugin Spa Loading](https://github.com/yue1123/vite-plugin-spa-loading)
 - [Vite Plugin Env Parse](https://github.com/yue1123/vite-plugin-env-parse)
 - [Vite Plugin Base64 Import](https://github.com/yue1123/vite-plugin-base64-import)
-- [Vite Plugin Base64 Import](https://github.com/yue1123/vite-plugin-supericon)
+- [Vite Plugin Super Icon](https://github.com/yue1123/vite-plugin-supericon)
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Cat.png" alt="Cat" width="25" height="25" /> Stats
 
